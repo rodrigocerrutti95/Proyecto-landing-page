@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Html con Digital House</title>
+   
+</head>
+<body>
+    <header> <h1> Archivos multimedia </h1> </header>
+    <!-- En assets se guardan los archivos estaticos de una pagina web (audio,video, imagenes,etc)-->
+    <h4> Videos </h4>
+    <!-- Si lo dejo sin atributos no puedo hacer nada, necesito agregar atributos propios de video:
+        controls permite agregar los controladores propios y habituales reproducir,detener,etc.
+        autoplay para que inicie automaticamente
+        muted lo reproduce sin audio-->
+    <video src="assets/video/"> </video>
+    <!-- Puedo definir la fuente de otras formas y con alternativas por si el navegador no pudiera reproducirlo -->
+    <video> 
+        <source src="assets/video/" type="video/mp4"> 
+        <source src="assets/video/" type="video/avi"> 
+        <!-- Si no funciona el video por no ser soportado se muestra la siguiente leyenda-->
+        Su navegador no soporta el formato de video 
+    </video>
+<br>
+<br>
+<audio src="assets/audio/" autoplay > </audio>
+</body>
+</html>

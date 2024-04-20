@@ -1,0 +1,331 @@
+*{  /*Aqui se esta normalizando, es decir definiendo caracteristicas para toda etiqueta de HTML*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Mantiene el ancho y alto a pesar del padding y border */
+    font-family: "Skranji", system-ui;
+    color:white;
+}
+
+header{ 
+    position: fixed; /*Fijamos el header en la posicion al ir hacia abajo en la pagina*/
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex; /*Esto hara que los elementos se pongan en linea*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 1%;
+    background-color: transparent;
+}
+
+.logo{ 
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.nav-list{
+    display: flex; /*Los elementos de la linea ul se ponen en linea*/
+
+}
+
+.nav-list a{
+    text-decoration: none; /*Quita el subrayado a los enlaces*/
+    font-style: normal;
+    margin-left: 60px; /*Para separar las palabras entre si*/
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent; /*Este es un borde transparente*/
+    transition: all .5s ease ; /*Esto es para transicionar todas las caracteristicas del nvalist*/
+}
+
+.nav-list a:hover{ 
+    border-bottom: 2px solid white; /*Aparece un subrayado al posicionarnos sobre un elemento*/
+}
+
+#menu-icon{ 
+    font-size: 45px;
+    z-index: 101; /*Para que este por delante del resto*/
+    cursor: pointer; /*Para que aparezca la manito al pasar el cursor por encima */
+    
+}
+ 
+#menu-toggle{ 
+    display:none; /*No aparece en pantalla de manera habitual*/
+} 
+
+.menu-icon-action{
+    display: none; /*Para que no pueda hacerle click*/
+} 
+
+
+.hero{ 
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(250deg, #00043f 30%, #4854bd 70%, #383838c9 90%); /*Fondo de color gradiente*/
+    position: relative; /*Posicion relativa al contenedor*/
+    display: grid; /*Para que el hero se divida en dos columnas*/
+    grid-template-columns: 1fr 1fr; /*La definicion de las dos columnas*/
+    align-items: center; /*Para alinear en el centro en el eje vertical*/
+    gap: 2rem; /*La separacion entre columnas es de 2 rem*/
+}
+
+
+.hero-text h5{
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.hero-text h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 60px;
+}
+
+.hero-text h1{
+    font-size: 40px;
+    font-weight: 1800;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+.hero-text p{
+    font-size: 80%;
+    line-height: 1.9;
+    margin-left: 60px;
+}
+.hero-text a {
+    display: inline-block; /*Me permite darles un ancho y un alto*/
+    margin-left: 60px;
+    margin-top: 10px;
+    background-color: #a59c9c;
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 15px 30px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.hero-text a.cv{ 
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 70px;
+}
+
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 18px;
+    transform: translateX(10px);
+}
+
+.hero-text a:active{
+    background-color: white;
+    color: black;
+}
+
+
+.hero-img {
+    width: 200px;
+    height: auto;
+    margin: 10% 0 0 10%;
+    opacity: 0.9 ;
+    transition: all 3s linear;
+}
+
+.hero-img:hover{
+    width: 250px;
+    opacity: 0.7;
+}
+
+
+section{ 
+    padding-left: 10px;
+}
+
+#logo-whatsapp{ 
+    font-size: 16px;
+    color: rgb(10, 165, 10);
+    text-decoration: none;
+    margin-right: 6px;
+    justify-items: center;
+}
+
+.redes-sociales{ 
+    position: absolute;
+    top:60vh;
+    padding: 0 1%;
+    font-size: 40px;
+}
+
+.redes-sociales a{ 
+    text-decoration: none;
+    background-color: transparent;
+    margin-bottom: 100px;
+}
+
+
+.ri-instagram-line{ 
+    font-size: 40px;
+    color: #a71f35;
+    background-color: transparent;
+    transition: all 1s ease;
+}
+.ri-instagram-line:hover{ 
+    color: #e41a5e;
+    transform: translateY(-10px);
+}
+
+.ri-linkedin-box-fill{ 
+    font-size: 40px;
+    color: #0E76A8;
+    background-color: transparent;
+    transition: all 1s ease;
+}
+
+.ri-linkedin-box-fill:hover{ 
+    color: #1496d3;
+    transform: translateY(-10px);
+}
+
+.ri-arrow-down-s-fill{
+    color:white ;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 25px;
+    background-color: #27213d;
+    border-radius: 50px;
+    vertical-align: middle;
+    padding: 12px;
+    transition: all 1s ease;
+}
+
+.ri-arrow-down-s-fill:hover{
+    transform: translateY(-10px);
+}
+
+/*Aqui abajo haremos media queries para hacer responsive el diseño de la pagina*/
+@media (max-width: 992px){ 
+
+
+    section{ 
+        padding: 0 3%;
+        transition: 0.5s;
+
+    }
+    .redes-sociales{ 
+        display: none;
+    }
+
+    .ri-instagram-line{ 
+        font-size: 20px;
+        color: white;
+        background-color: transparent;
+        transition: all 1s ease;
+    }
+
+    .ri-instagram-line:hover{ 
+        color:white;
+        transform: none;
+    }
+
+    
+    .ri-linkedin-box-fill{ 
+        font-size: 20px;
+        color: white;
+        background-color: transparent;
+        transition: all 1s ease;
+    }
+
+    .ri-linkedin-box-fill:hover{ 
+        color:white;
+        transform: none;
+    }
+    .ri-arrow-down-s-fill{
+        display:none;
+    }
+
+    .hero-img{ 
+        text-align: center;
+    }
+
+    .hero-img img{ 
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+
+    .hero-text{
+        font-size:70%;
+    }
+}
+
+
+@media (max-width: 768px){ 
+
+    #menu-icon{ 
+        display:block
+    }
+    .menu-icon-action{ 
+        display:block
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .redes-sociales{ 
+        display: none;
+    }
+
+    .ri-arrow-down-s-fill{
+        display:none;
+    }
+
+    .hero-img{ 
+        text-align: center;
+    }
+
+    .hero-img{ 
+        margin: 0;
+    }
+
+    .hero{
+        width:100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-list{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width:200px;
+        height:180px;
+        background-color: rgba(9, 1, 37, 0.87);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .2s ease;
+    }
+
+    .nav-list a{
+        display: block;
+        margin: 7px 0;
+    }
+ 
+    #menu-toggle:checked + label.menu-icon-action + ul{ 
+        right:0;
+    }
+}

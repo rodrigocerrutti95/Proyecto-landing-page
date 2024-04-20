@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Html con Digital House</title>
+   
+</head>
+<body>
+    <header> <h1> Formularios </h1> </header>
+    <!-- En la url de action suele ir un receptor de backend que pueda procesar la info por ejemplo un php-->
+    <!-- El metodo get lo envia a traves de la URL a todos los atributos mientras el metodo post lo envia a traves del body 
+    Esto se puede ver o en la url (get) o en Htas desarrolladores (F12) Network PAyload 
+    El atributo value es SUPER IMPORTANTE porque es el que se registra y guarda al enviar el formulario-->
+    <form action="URL" method="post">
+        <!-- Input type text-->
+        <label for="Nombre"> Nombre </label>
+        <input type="text" name="Nombre" placeholder="Ingrese su nombre" id="Nombre"> <br>
+        <label for="Apellido"> Apellido </label>
+        <input type="text" name="Apellido" placeholder="Ingrese su apellido" id="Apellido"> <br>
+        <label for="password"> Contraseña </label>
+        <input type="password" name="Contraseña" placeholder="Contraseña"> <br>
+        <!-- Input type radio button seleccion unica-->
+        <label for="Genero" name="Genero"> Seleccione su genero </label> <br>
+        <input type="radio" name="Genero" value="Masculino" id="Genero"> Masculino <br>
+        <input type="radio" name="Genero" value="Femenino" id="Genero"> Femenino <br>
+        <!-- Inputy type checkbox seleccion multiple con checkbox-->
+        <label for="Intereses" name="Intereses">Suscribirme al canal de :</label> <br>
+        <input type="checkbox" name="Intereses" id="Educacion" unchecked value="Educacion"> Educacion <br>
+        <input type="checkbox" name="Intereses" id="Deportes" unchecked value="Deportes"> Deportes <br>
+        <input type="checkbox" name="Intereses" id="Tecnologia"unchecked value="Tecnologia"> Tecnologia <br>
+
+        <h2> Inserte su comentrio</h2>
+        <textarea name="Comentario" rows="4" cols="50"> </textarea> <br>
+        <!-- Seleccion unica de un desplegable-->
+        <h3> Seleccione su ciudad</h3>
+        <select name="Ciudad">
+            <option value="Nueva York"> Nueva York</option>
+            <option value="Buenos Aires"> Buenos Aires</option>
+            <option value="Paris"> Paris</option>
+        </select>
+        <br>
+        <br>
+        <!-- Botones-->
+        <button type="reset"> Resetear</button>
+        <button type="submit"> Registrar </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.div-rojo{
+    border: solid 1px black;
+    background-color: red;
+    width:100px;
+    height:100px;
+    display:block ;
+    margin: 15px;
+    padding: 15px;
+    
+}
+.div-verde{
+    border: solid 1px black;
+    background-color: green;
+    width:100px;
+    height:100px;
+    display:block ;
+    margin: 15px;
+    padding: 15px;
+
+}
+.div-azul{
+    border: solid 1px black;
+    background-color: blue;
+    width:100px;
+    height:100px;
+    display:block ;
+    margin: 15px;
+    padding: 15px;
+
+}
+.span-rojo{
+    border: solid 1px black;
+    background-color: red;
+    width:100px;
+    height:100px;
+    display: block ;
+    margin: 15px;
+    /*padding: 15px;*/
+
+
+}
+.span-verde{
+    border: solid 1px black;
+    background-color: green;
+    width:100px;
+    height:100px;
+    display:block ;
+    margin: 15px;
+    /*padding: 15px;*/
+
+
+}
+.container{
+    background-color: black;
+    display:flex;
+    position:sticky; /*absolute relative static fixed sticky, tienen distintos comportamientos y puedo moverlos
+    utilizando top left right bottom*/
+    z-index: -1; /*Esto mueve por detras (-) o delante (+) a lo que se esta dando formato.
+    Tanto Z index como mover la posicion funcionan cuando no estamos en position: static*/
+    
+}
+
+.contenedor{
+    height:200px;
+    width:200px;
+    border: 1px solid black;
+    background-color: coral; 
+    overflow:auto; /*hidden, oculta lo que se escapa,visible, es por default, scroll aparece un scroll interno
+                    auto, elige automaticamente lo mejor por ej: solo scroll vertical*/
+   /* overflow-x: visible; /*podemos elegir el comportamiento en X e Y
+    overflow-y: scroll; */
+    overflow-wrap: break-word; /*rompe las palabras largas. si ponemos normal la palabra sigue en la linea */
+    /*float:left permite definir como se comporta el elemento respecto a otros (a izq. a dcha. etc.) 
+    pone el contenido a la par y no debajo*/
+    display:inline-block; /*Permite definir alto y ancho a un elemento de linea (caracteristica de bloques) 
+    y ademas poner cada elemento de linea a la par del otro*/
+}

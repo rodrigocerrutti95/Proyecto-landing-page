@@ -1,0 +1,182 @@
+/*.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: rgb(85, 150, 150);
+    border: 2px groove black;
+    padding: 10px;
+    gap: 5px;
+    justify-content:stretch;
+    align-content: stretch;
+}*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "noticias . publicidades"
+        "noticias . publicidades"
+        "noticias . banner"
+        "footer footer footer";
+
+    background-color: rgb(85, 150, 150);
+    border: 2px groove black;
+    padding: 10px;
+    gap: 5px;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.grid-item {
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}*/
+/*.item8{ 
+    grid-area: 1 / 2 / 5 / 6  (Grid Area - Filas del 1 al 5 y Columnas del 2 a la 6)
+}*/
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: navbar;
+}
+
+.item3 {
+    grid-area: noticias;
+}
+
+.item4 {
+    grid-area: publicidades;
+}
+
+.item5 {
+    grid-area: banner;
+}
+
+.item6 {
+    grid-area: footer;
+}
+
+@media screen and (max-width:992px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header"
+            "navbar navbar navbar"
+            "noticias noticias publicidades"
+            "noticias noticias publicidades"
+            "noticias noticias banner"
+            "footer footer footer";
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "noticias"
+            "publicidades"
+            "banner"
+            "footer";
+        gap: 2px
+    }
+}
+
+.item1 {
+    transition: background-color 2s;
+    /*Hacemos transicion al poner el mouse en el color, puede hacerse en ancho,alto,etc Muy usado en botones e inputs*/
+    transition-timing-function: linear;
+}
+
+.item1:hover {
+    background-color: blueviolet;
+}
+
+.item2 {
+    transition: background-color 2s, transform 3s;
+    /*La transition es con la transformacion*/
+    transition-timing-function: ease;
+    /*Cambia la aceleracion de transiciones, mas facil ver en width*/
+}
+
+.item2:hover {
+    background-color: rgb(236, 30, 150);
+    transform: rotate(360deg);
+    /*Hacemos rotar al pasar el cursor*/
+
+}
+
+.item3 {
+    transition: background-color 2s;
+    transition-timing-function: ease-in;
+}
+
+.item3:hover {
+    background-color: rgb(26, 23, 206);
+}
+
+.item4 {
+    transition: background-color 2s;
+    transition-timing-function: ease-out;
+}
+
+.item4:hover {
+    background-color: rgb(10, 223, 238);
+}
+
+.item5 {
+    transition: background-color 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.item5:hover {
+    background-color: rgb(146, 18, 18);
+}
+
+.animaciones{ 
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    animation-name: Prueba;
+    animation-duration: 3s; /*Duracion*/
+    animation-iteration-count: infinite; /*Cantidad de iteraciones*/
+    animation-delay: 1s; /*Demora de la primera iteracion*/
+    animation-direction:alternate-reverse;
+}
+/*Desde hasta se hace de la siguiente forma:
+@keyframes Prueba{
+    from { background-color: red;}
+    to{ background-color: blue;}
+} */
+
+@keyframes Prueba {
+    0%{ 
+        background-color: red;
+    }
+    25%{ 
+        background-color: yellow;
+    }
+    50%{ 
+        background-color: blue;
+    }
+    75%{ 
+        background-color: yellow;
+    }
+    100%{ 
+        background-color: red;
+    }
+}

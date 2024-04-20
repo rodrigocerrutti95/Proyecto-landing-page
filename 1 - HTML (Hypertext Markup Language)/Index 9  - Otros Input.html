@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Html con Digital House</title>
+   
+</head>
+<body>
+    <header> <h1> Otros tipos de input </h1> </header>
+    <form action="" method="get">
+        <label for="color"> Seleccionar color:</label> 
+        <input type="color" name="color" id="color"> 
+        <br>
+        <label for="date"> Seleccionar una fecha:</label> 
+        <input type="date" name="date" id="date"> 
+        <br>
+        <label for="time"> Seleccionar una hora:</label> 
+        <input type="time" name="time" id="time"> 
+        <br>
+        <label for="number"> Escribir un numero:</label> 
+        <!-- Con min y max puedo limitar la cantidad de numeros en las flechas-->
+        <input type="number" name="number" id="number" min="" max=""> 
+        <br>
+        <label for="range"> Evalua del 1 al 10:</label> 
+        <input type="range" name="range" id="range" min="1" max="10"> 
+        <br>
+        <label for="file"> Seleccionar un archivo:</label> 
+        <!-- Envia la URL relativa del archivo, no el archivo en si-->
+        <input type="file" name="file" id="file" > 
+        <br>
+        <button type="submit"> Ingresar </button>
+    </form>
+</body>
+</html>

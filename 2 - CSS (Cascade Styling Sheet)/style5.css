@@ -1,0 +1,31 @@
+.center{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    width: 200px;
+    margin: auto; /*Logra que el margen en las 4 direcciones quede centrado*/
+}
+
+#Escudo{
+    width: 200px;
+    height: 200px;
+   /* display:block; /*Para alinear la imagen le damos display como bloque y margin auto lograr centrarla
+    margin:auto ;*/
+    float: right; /*Alineo a la derecha. Puedo hacerlo tambien con position*/
+}
+
+/*Al colocar el selector con un " "(Espacio) tenemos un selector descdendiente (de hijo,nieto,etc) */
+div p { /*Logra modificar a los parrafos dentro de los div*/
+    background-color: aquamarine;
+
+}
+
+/*Ahora tenemos un selector de hijo usando selector>selector los cambios solo afectan al hijo no toda las descendencia*/
+div>p {
+    background-color: blue;
+}
+/*Modifica la estructura de mismo nivel, pero adyacente al en este caso div*/
+/*Selector de hermanos con ~ modifica a todos los hermanos*/
+div+p { 
+    background-color: grey;
+}

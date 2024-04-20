@@ -1,0 +1,64 @@
+/*La estructura es la siguiente selector:pseudoclase{ atributo: valor;}*/
+a:link {
+    color: chocolate;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover {
+    background-color: aqua;
+    text-transform:uppercase;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+a:active{ 
+    color:blue
+}
+
+p:first-child{ /*Modifica el p que sea primer hijo (en este caso del div)*/
+    color:red
+}
+
+input:focus{ background-color: aqua;
+}
+input:required{ background-color: blueviolet;
+
+}
+
+input:valid{ 
+    background-color: green;
+}
+
+/*La estructura es la siguiente selector::pseudoelemento{ atributo: valor;}*/
+
+p::first-line{
+    color:blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::first-letter{
+    color:darkgoldenrod;
+    font-size: xx-large;
+}
+
+li::marker{ 
+    color:red;
+    font-size: 20px;
+    opacity: 0.1;
+}
+
+::selection {
+    background-color: black;
+    color:red;
+    
+}
+/* Para seleccion por atributos la estructura es: Selector[atributo]{propiedad:valor;}*/
+input[placeholder]{
+    background-color: black;
+}
+
+/*Si hago: [class~=clase] el ~= selecciona a todos los que contienen la palabra "clase"
+ Si hago:  [clas*~=cl] el *= implica que si tiene "cl" entre sus clases seran seleccionados

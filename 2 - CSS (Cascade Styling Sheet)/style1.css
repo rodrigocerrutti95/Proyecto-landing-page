@@ -1,0 +1,37 @@
+h2 {color:rgb(52, 164, 192);
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid black
+    margin 5px;
+    padding: 2px;
+    }
+.overline{ text-decoration-line: overline;
+            text-decoration-color: red;
+        }
+
+.line-through{ text-decoration-line: line-through;
+                text-decoration-style: double;
+}
+
+.underline{ text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5px;
+}
+/* Esto puede hacerse en una unica linea como text-decoration: underline,wavy,5px arrojando igual resultado */
+
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform:lowercase;}
+.capitalize{text-transform: capitalize;}
+
+.spacing{ text-indent:15px; /*Sangria*/
+          letter-spacing: 2px;
+          line-height: 1.5;
+          word-spacing: 1.5;
+          white-space: wrap; /* nowrap Todo el texto en una linea*/
+}
+
+.shadow{ text-shadow: 2px 2px 3px red; /*Primero sombra hacia los costados, segundo sombra hacia abajo, tercero desenfoque, cuarto color y puedo repetir para hacer una segunda sombra*/
+
+}

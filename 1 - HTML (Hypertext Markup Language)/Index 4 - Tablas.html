@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Html con Digital House</title>
+    <!-- Estilo para que se distinga mas clara la tabla-->
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <header> <h1> Tablas en HTML </h1> </header>
+    <!-- TR=Table Row= Fila de Tabla TH=Table Header= titulo de tabla TD=table data=datos de tabla-->
+    <!-- colspan="n" hace que un determinado atributo ocupe "n" columnas -->
+    <!-- rowspan="n" hace que un determinado atributo ocupe "n" columnas -->
+    <!-- Con colgroup y style podemos darle formato a determinadas columnas-->
+    <table> 
+        <colgroup>
+            <col span="1" style="background-color: lightgreen;"> 
+        </colgroup>
+        <tr>
+            <th> Alumnos</th>
+            <th colspan="1"> Nombre</th>
+            <th rowspan="1"> Apellido</th>
+            <th> Notas Matematicas</th>
+        </tr>
+        <tr> 
+            <th> 1</th>
+            <td> Nadia Gisele</td>
+            <td> Perez</td>
+            <td> 6</td>
+        </tr>
+        <tr> 
+            <th> 2</th>
+            <td> Rodrigo</td>
+            <td> Cerrutti</td>
+            <td> 10</td>
+        </tr>
+        <tr> 
+            <th> 3</th>
+            <td> Mariano </td>
+            <td> Cerrutti </td>
+            <td> 8 </td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Html con Digital House</title>
+   
+</head>
+<body>
+    <header> <h1> Atributos que definen el comportamiento de los input </h1> </header>
+    <form method="get">
+        <label for="name">Escribe tu nombre</label>
+        <!--Name es el nombre del atributo
+        Value nos permite dar un valor inicial al inpu
+        Type define el tipo
+        ID lo relaciona con el label
+        Placeholder indica un texto hasta que se escriba
+        Readonly hace que no sea sobreescribible (fondo blanco)
+        Disabled inhhabilita modificaciones (fondo gris)
+        Size="n" permite definir el ancho del texto
+        minlenght y maxlenght limitan las cantidades de caracteres
+        min y max limitan los valores en caso de un input numerico o de una fecha o rango
+        Required le da caracter obligatorio
+        autofocus lo resalta al cargar la painga
+        autocomplete="off" inhabilita el autocompletado-->
+        <input type="text" name="name" id="name" placeholder="Inserte su nombre" value="Rodrigo" required>
+        <br>
+        <!-- Prestar attencion type button y type submit no es lo mismo-->
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

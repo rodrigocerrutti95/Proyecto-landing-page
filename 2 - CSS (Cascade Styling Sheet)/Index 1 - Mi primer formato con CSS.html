@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> CSS con Digital House</title>
+    <!-- Se puede hacer con la etiqueta Style pero no es tan recomendado, ver ejemplo a continuacion para dar color salmon a h1
+    <style>
+        h1 { color:salmon;
+        }
+    </style> -->
+    <!-- La estructura de abajo se genera escribiendo link:css 
+    Esto crea una linea de stylesheet que hace referencia a style.css que hay que crear-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Agregamos ids para darle estilo a un elemento particular-->
+    <header> <h1 id="titulo-principal"> Esta es mi primera practica con CSS </h1> </header>
+    <h1> Otro titulo</h1>
+    <!-- Agregamos clases para darle formatos a todos los elementos de la misma clase aunque sean dif. valor semantico-->
+    <p class="rojo"> Esto es un parrafo</p>
+    <!-- Se puede agregar mas de una clase, separados por la barra espaciadora
+    Aqui h3 pertenece a la clase rojo y a la clase fondo-azul-->
+    <h3 class="rojo fondo-azul"> Titulo mas pequeño</h3>
+    <p> Otro parrafo mas </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/*El selector h1 modifica a todos los h1 que hubieran*/ 
+h1  { color:darksalmon;
+    background-color: blue;
+    text-align: left; 
+
+    }
+/* Si ahora usamos un selector de id solo modificaremos a lo que corresponda a ese identificador (con #)*/
+#titulo-principal { color: blue;
+                    background-color: beige;
+                    text-align: center;
+
+    }
+/*Aca hacemos selector de clase con el punto (.) y damos formato
+Para dar formato a una clase, pero por ejemplo que solo el titulo sea centrado haremos h3.rojo y text alling*/
+.rojo { color: red;
+        font-family: Verdana;
+
+    }
+h3.rojo {text-align: center;
+
+        }
+.fondo-azul{background-color: blue;
+
+            }
+/* Puedo dar formato a dos elementos como por ejemplo h2 y parrafo al seleccionar: h2,p{})
+/* El * es el "selector universal", hace que TODOS los elementos tengan una misma caracteristica *{}  */

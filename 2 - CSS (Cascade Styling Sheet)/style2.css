@@ -1,0 +1,47 @@
+.serif{font-family:'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight:bold;
+        font-variant:small-caps;
+        font-size:x-large}
+
+.sans-serif{ font-family:sans-serif} 
+
+.monospace{font-family: monospace;}
+
+.cursive{font-family: 'lucida handwriting' cursive;}
+
+.fantasy{font-family: fantasy;}
+/*Se trabaja con familia de fuentes en general ya que si un navegador no encuentra la primera en su sistema
+intenta utilizar la segunda opcion, y asi sucesivamente. Al tratarse de familias de fuentes,
+estas deberian de ser similares sin afectar mucho lo que se intenta mostrar en la pagina.*/
+/*Tambien se puede formatear de la siguiente manera:
+.serif{font: bold,italic,serif,small-caps}
+Eso se conoce como shorthand properties */
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Aqui empieza a mostrarse ejemplos de formatos de listas*/
+ul.desordenada{ list-style-type: lower-greek;
+}
+ol.ordenada {list-style-type: upper-roman;
+             list-style-position: inside; /*El texto queda dentro del texto si hay mas de una linea*/
+}
+
+/*A PARTIR DE ACA VAMOS A TRABAJAR CON TABLAS */ 
+table,th,td {border: 2px solid black;text-align: start;
+            
+}
+table{ border-collapse: collapse;
+        margin: 25px;
+        width:80%; /*80% de la pantalla*/
+} /*Al colapsar el borde de la tabla, solo queda el borde de td y th*/
+th,td{ height:15px}
+td:hover{background-color: grey;} /*Cambia el fondo al pasar el cursor por tabledata*/
+th:hover{background-color: grey;} /*Cambia el fondo al pasar el cursor por tableheader*/
+tr:nth-child(even){background-color: rgb(125, 250, 146);} /*Cambia el fondo de las celdas pares*/
+
+
